@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{1B930F55-2C05-130E-002A-00CCB7DB3971}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "LidarSim_UE4",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

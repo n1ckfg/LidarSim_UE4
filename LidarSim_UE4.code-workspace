@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/home/nick/GitHub/WISE/anm_unreal_sim/submodules/UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off"
+	}
+}
