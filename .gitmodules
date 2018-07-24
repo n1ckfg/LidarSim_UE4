@@ -1,0 +1,3 @@
+[submodule "LidarSim"]
+	path = LidarSim
+	url = git@github.com:n1ckfg/LidarSim
