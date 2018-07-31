@@ -1,11 +1,13 @@
 #!/bin/bash
 
-UE_ROOT=$HOME"/UnrealEngine"
+PROJECT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SUBMODULES_DIR="$( dirname "$PROJECT_DIR" )"
+#UE_DIR=$SUBMODULES_DIR"/UnrealEngine"
+UE_DIR="$HOME/UnrealEngine"
 
-PROJECT=$(basename $PWD)
+PROJECT=$(basename "$PROJECT_DIR")
 
-# removing this line from the .uproject forces a rebuild
-#sed -i '/EngineAssociation/d' ./$PROJECT.uproject
-
-$UE_ROOT"/Engine/Binaries/Linux/UE4Editor" $PWD"/"$PROJECT".uproject" -game -editor
-
+$UE_DIR"/Engine/Build/BatchFiles/Linux/Build.sh" \
+"$PROJECT" Development Linux \
+-project=\""$PROJECT_DIR"/"$PROJECT".uproject\" \
+-progress -editorrecompile -NoHotReloadFromIDE

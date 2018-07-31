@@ -4,6 +4,7 @@ rm -rf Binaries
 rm -rf DerivedDataCache
 rm -rf Intermediate
 rm -rf Saved
+rm -rf .kdev
 rm -f CMakeLists.txt
 rm -f Makefile
 rm -f *.workspace
