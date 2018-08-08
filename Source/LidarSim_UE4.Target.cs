@@ -3,7 +3,7 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class LidarSim_UE4Target : TargetRules
+public class LidarSim_UE4Target : TargetRules 
 {
 	public LidarSim_UE4Target(TargetInfo Target) : base(Target)
 	{
